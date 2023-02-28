@@ -84,6 +84,14 @@ html {
   line-height: 120%;
 }
 
+.form._error{
+    box-shadow: 0 0 10px red;
+}
+
+.form:focus{
+    border-color: #ffffff;
+}
+
 .point {
   padding-bottom: 38px;
 }
@@ -92,9 +100,14 @@ html {
   background: #2c2f47;
   border-radius: 28px;
   padding: 11px 40px;
-  border: 0;
+  border: 1px solid #171929;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 41px;
+}
+
+.form_btn:hover{
+    background-color: #171929;
+    border: 1px solid #2c2f47;
 }
 
 .text_form_terms {
@@ -109,6 +122,10 @@ html {
 
 .checkbox {
   display: none;
+}
+
+.form_label._error .fake_checkbox::before{
+    box-shadow: 0 0 10px red;
 }
 
 .checkbox:checked + .fake_checkbox::before{
@@ -150,4 +167,8 @@ html {
 .terms{
     padding-top: 7px;
     padding-left: 10px;
+}
+
+.text .form:focus{
+    color: #ffffff;
 }
